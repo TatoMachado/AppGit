@@ -1,0 +1,17 @@
+﻿@model Languages
+
+@{
+    ViewData["Title"] = "Home Page";
+    
+}
+
+<div class="text-center">
+    <h1 class="display-4">Selecione uma Linguagem:</h1>
+</div>
+
+<div class="center">
+    <form asp-controller="Home" asp-action="List" method="post">
+        <select asp-for="language" asp-items="Model.languages"></select> 
+        <br /><button type="submit">Enviar</button>
+    </form>
+</div>

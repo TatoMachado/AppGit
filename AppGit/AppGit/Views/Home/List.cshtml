@@ -1,0 +1,41 @@
+﻿@model Search
+
+@{
+    ViewData["Title"] = "Home Page";
+    
+}
+
+<div class="text-center">
+    <h1 class="display-4">Resultado</h1>
+</div>
+
+
+<h2 class="center">Total de Resultados: </h2>
+<h2>@Html.DisplayFor(modelItem => modelItem.total_count) </h2>
+<br />  
+
+
+<h2>Lista de Repositórios</h2>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>FullName</th>
+        <th>Owner</th>
+        <th>Html Url</th>
+        <th>Description</th>
+        <th>Events Url</th>
+    </tr>
+@foreach (var item in Model.items) {
+    <tr>
+        <td>@Html.DisplayFor(modelItem => item.name)</td>
+        <td>@Html.DisplayFor(modelItem => item.full_name)</td>
+        <td>@Html.DisplayFor(modelItem => item.owner.login)</td>
+        <td>@Html.DisplayFor(modelItem => item.html_url)</td>
+        <td>@Html.DisplayFor(modelItem => item.description)</td>
+        <td>@Html.DisplayFor(modelItem => item.events_url)</td>
+    </tr>
+}
+</table>
+
+
+

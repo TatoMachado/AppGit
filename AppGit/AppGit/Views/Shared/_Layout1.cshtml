@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Diploma Digital</title>
+    <link rel="stylesheet" href="https://homolog-apps.fael.edu.br/faelstrap/css/faelstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/footer.css" />
+    <link rel="stylesheet" href="~/css/media.css" />
+</head>
+<body>
+
+    <main role="main">
+        <div class="container">
+            @RenderBody()
+        </div>
+        <preloader></preloader>
+    </main>
+
+    <vc:footer></vc:footer>
+
+    <script src="https://homolog-apps.fael.edu.br/faelstrap/js/faelstrap.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/footer.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>
