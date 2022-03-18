@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "40omdOtcaW9Ss1mASICbxHgZ6/xCmrDoJGYAC5gqpYMWB1MHU1Om1TNSW1RHwMgm63dzhla4lQQEeQ1m3tu2yw==",
+  "dgSpecHash": "6er08D/Y+hgZrf8b/6/c1eNaKe3qaMkOYm+toZh9eKEdc3ej+VjjuDq0pLTWrTZiQvJA4T4yObnwjOo0ktZ6Og==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Xeon\\source\\repos\\AppGit\\AppGit\\AppGit.csproj",
+  "projectFilePath": "C:\\Users\\Xeon\\Documents\\GitHub\\AppGit\\AppGit\\AppGit\\AppGit.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Xeon\\.nuget\\packages\\bootstrap\\5.1.3\\bootstrap.5.1.3.nupkg.sha512",
     "C:\\Users\\Xeon\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

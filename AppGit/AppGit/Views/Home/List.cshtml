@@ -5,37 +5,48 @@
     
 }
 
-<div class="text-center">
-    <h1 class="display-4">Resultado</h1>
-</div>
+<h1 class="h3 mb-2 text-gray-800">Resultados</h1>
+                    <p class="mb-4">Exibindo os resultados iniciais.</p>
 
-
-<h2 class="center">Total de Resultados: </h2>
-<h2>@Html.DisplayFor(modelItem => modelItem.total_count) </h2>
-<br />  
-
-
-<h2>Lista de Repositórios</h2>
-<table class="table">
-    <tr>
-        <th>Name</th>
-        <th>FullName</th>
-        <th>Owner</th>
-        <th>Html Url</th>
-        <th>Description</th>
-        <th>Events Url</th>
-    </tr>
-@foreach (var item in Model.items) {
-    <tr>
-        <td>@Html.DisplayFor(modelItem => item.name)</td>
-        <td>@Html.DisplayFor(modelItem => item.full_name)</td>
-        <td>@Html.DisplayFor(modelItem => item.owner.login)</td>
-        <td>@Html.DisplayFor(modelItem => item.html_url)</td>
-        <td>@Html.DisplayFor(modelItem => item.description)</td>
-        <td>@Html.DisplayFor(modelItem => item.events_url)</td>
-    </tr>
-}
-</table>
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Total de Resultados</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">@Html.DisplayFor(modelItem => modelItem.total_count)</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Owner</th>
+                                            <th>Html Url</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Owner</th>
+                                            <th>Html Url</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                    @foreach (var item in Model.items) {
+                                        <tr>
+                                            <td>@Html.DisplayFor(modelItem => item.name)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.owner.login)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.html_url)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.description)</td>
+                                        </tr>
+                                    }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
 
 
 

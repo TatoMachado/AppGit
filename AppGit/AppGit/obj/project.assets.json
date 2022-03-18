@@ -1300,24 +1300,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Xeon\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Xeon\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Xeon\\source\\repos\\AppGit\\AppGit\\AppGit.csproj",
+      "projectUniqueName": "C:\\Users\\Xeon\\Documents\\GitHub\\AppGit\\AppGit\\AppGit\\AppGit.csproj",
       "projectName": "AppGit",
-      "projectPath": "C:\\Users\\Xeon\\source\\repos\\AppGit\\AppGit\\AppGit.csproj",
+      "projectPath": "C:\\Users\\Xeon\\Documents\\GitHub\\AppGit\\AppGit\\AppGit\\AppGit.csproj",
       "packagesPath": "C:\\Users\\Xeon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Xeon\\source\\repos\\AppGit\\AppGit\\obj\\",
+      "outputPath": "C:\\Users\\Xeon\\Documents\\GitHub\\AppGit\\AppGit\\AppGit\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\Xeon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

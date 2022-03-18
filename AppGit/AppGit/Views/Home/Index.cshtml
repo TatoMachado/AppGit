@@ -5,13 +5,21 @@
     
 }
 
-<div class="text-center">
-    <h1 class="display-4">Selecione uma Linguagem:</h1>
-</div>
 
-<div class="center">
-    <form asp-controller="Home" asp-action="List" method="post">
-        <select asp-for="language" asp-items="Model.languages"></select> 
-        <br /><button type="submit">Enviar</button>
-    </form>
+
+<div class="text-center">
+        <p class="text-gray-500 mb-0">Selecione uma Linguagem:</p>
+
+
+    <div class="class="dropdown no-arrow mb-4"">
+        <form asp-controller="Home" asp-action="List" method="post">
+            <select asp-for="language" asp-items="Model.languages" class="btn btn-primary dropdown-toggle" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false"></select> 
+
+            <br><br><button class="btn btn-secondary" type="submit">Enviar</button>
+        </form>
+    </div>
+
+
 </div>
